@@ -1,5 +1,7 @@
 # Pacmen
 
+<img src="inaction.png">
+
 ## Description
 Each time a button is pressed, a new Pacman will appear on screen. The start button will activate movement amongst pacmen. Collisions with screen walls will alter color and direction of pacmen. 
 
