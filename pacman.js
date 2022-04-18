@@ -44,20 +44,20 @@ function update() {
         item.newimg.style.left = item.position.x;
         item.newimg.style.top = item.position.y;
 
-        if (item.newimg.src.includes("./pacman3.png"))
+        if (item.newimg.src.includes("PacMan3.png"))
             {
-            item.newimg.src = "./pacman4.png";
+            item.newimg.src = "PacMan4.png";
             }
-        else if (item.newimg.src.includes("./pacman4.png"))
+        else if (item.newimg.src.includes("PacMan4.png"))
             {
-            item.newimg.src = "./pacman3.png";
+            item.newimg.src = "PacMan3.png";
             }
-        else if (item.newimg.src.includes("./pacman1.png"))
+        else if (item.newimg.src.includes("PacMan1.png"))
             {
-            item.newimg.src = "./pacman2.png"
+            item.newimg.src = "PacMan2.png"
             }
         else {
-            item.newimg.src = "./pacman1.png";
+            item.newimg.src = "PacMan1.png";
         }
 
     
@@ -69,12 +69,12 @@ function checkCollisions(item) {
     if (item.position.x + item.velocity.x + item.newimg.width > window.innerWidth ||
         item.position.x + item.velocity.x < 0) {
         item.velocity.x = -item.velocity.x;
-        if (item.newimg.src.includes("pacman3.png" || "pacman4.png"))
+        if (item.newimg.src.includes("PacMan3.png" || "PacMan4.png"))
             {
-            item.newimg.src = "pacman1.png";
+            item.newimg.src = "PacMan1.png";
             }
         else {
-            item.newimg.src = "pacman3.png";
+            item.newimg.src = "PacMan3.png";
         }
     }
     if (item.position.y + item.velocity.y + item.newimg.height > window.innerHeight ||
