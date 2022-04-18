@@ -44,20 +44,20 @@ function update() {
         item.newimg.style.left = item.position.x;
         item.newimg.style.top = item.position.y;
 
-        if (item.newimg.src.includes("https://github.com/jkosai/pacmen/blob/main/PacMan3.png"))
+        if (item.newimg.src.includes("./pacman3.png"))
             {
-            item.newimg.src = "https://github.com/jkosai/pacmen/blob/main/PacMan4.png";
+            item.newimg.src = "./pacman4.png";
             }
-        else if (item.newimg.src.includes("https://github.com/jkosai/pacmen/blob/main/PacMan4.png"))
+        else if (item.newimg.src.includes("./pacman4.png"))
             {
-            item.newimg.src = "https://github.com/jkosai/pacmen/blob/main/PacMan3.png";
+            item.newimg.src = "./pacman3.png";
             }
-        else if (item.newimg.src.includes("https://github.com/jkosai/pacmen/blob/main/PacMan1.png"))
+        else if (item.newimg.src.includes("./pacman1.png"))
             {
-            item.newimg.src = "https://github.com/jkosai/pacmen/blob/main/PacMan2.png"
+            item.newimg.src = "./pacman2.png"
             }
         else {
-            item.newimg.src = "https://github.com/jkosai/pacmen/blob/main/PacMan1.png";
+            item.newimg.src = "./pacman1.png";
         }
 
     
